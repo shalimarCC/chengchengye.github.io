@@ -26,18 +26,15 @@ GameManager.prototype = {
 
     // 在一个随机单元格中随机填充2或4
     addRandomTiles: function() {
-
         if (this.grid.cellsAvailable()) {
             var value = Math.random() < 0.9 ? 2 : 4;
             var cell = this.grid.randomAvailableCell();
             var tile = new Tile(cell, value);
             this.grid.insertTile(tile); // 插入一个单元格
         }
-
     },
 
     actuate: function() {
-
         return {
             grids: this.grid.cells,
             over: this.over,
