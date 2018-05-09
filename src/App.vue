@@ -26,7 +26,7 @@
         fullStyle: [
           `/*
 * Inspired by http://strml.net/
-* 大家好，我是南方。
+* 大家好，我是123。
 * 我来写一份简历！
 */
 
