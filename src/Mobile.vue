@@ -24,7 +24,7 @@
         fullStyle: [
           `/*
 * Inspired by http://strml.net/
-* 大家好，我是南方。
+* 大家好，我是ff。
 * 我来写一份简历！
 */
 
@@ -126,9 +126,9 @@ html{
 }
 `],
         currentMarkdown: '',
-        fullMarkdown: `南方
+        fullMarkdown: `xx
 ====
-坐标：湖南长沙。
+坐标：xxxxx。
 
 资深软件工程师，资深产品经理，高级项目经理。现为自由职业。
 
