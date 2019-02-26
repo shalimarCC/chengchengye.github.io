@@ -1,0 +1,52 @@
+.eleUlstyle li{
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+.eleIcstyle li{
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+.elestyle{
+    width:100%;
+    overflow:hidden;
+}
+.eleColStyle .el-radio-group{
+    width:300px;
+}
+.mesbannerStyle{
+    width:400px;
+    float:left;
+}
+.mesbannerStyle .el-upload{
+    width:120px;
+    height:120px;
+    line-height: 120px;
+}
+.mesbannerStyle img{
+    width:120px;
+    height:120px;
+}
+.editUsalConfig{
+    width:400px;
+    float:left;
+}
+.eleShopStyle{
+    width:300px;
+    overflow:hidden;
+    float:left;
+}
+.siderboxIn{
+    border-top:1px dashed #ccc;padding:40px 30px;width:700px !important;box-sizing:border-box;cursor:move
+}
+.moreSlideBanner{
+    overflow: hidden;
+}
+.moreSlideBanner p{
+    display:block;
+    width:40%;
+    float:left;
+}
