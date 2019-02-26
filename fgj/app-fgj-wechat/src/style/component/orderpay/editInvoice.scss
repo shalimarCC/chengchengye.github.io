@@ -1,0 +1,281 @@
+$baseWidth:750px;
+@function px($val) {
+    @return $val/$baseWidth*10+rem;
+}
+
+#invoice {
+    width: 100%;
+    background: #eee;
+    height: 100%;
+    overflow-x: auto;
+}
+
+.invoice_1 {
+    height: px(242px);
+    background: #fff;
+    padding: 0 px(24px);
+    h3 {
+        font-size: px(30px);
+        color: #323232;
+        line-height: px(70px);
+    }
+    ul {
+        margin-top: px(14px);
+        li {
+            width: px(200px);
+            line-height: px(60px);
+            border: 1px solid #f4f4f4;
+            text-align: center;
+            font-size: px(26px);
+            float: left;
+            margin-right: px(20px);
+            margin-bottom: px(20px);
+        }
+        .active {
+            color: #97011e;
+            border: 1px solid #97011e;
+        }
+    }
+}
+
+.invoice_2 {
+    height: px(140px);
+    background: #fff;
+    padding: 0 px(24px);
+    margin-top: px(20px);
+    border-bottom: 1px solid #f4f4f4;
+    h3 {
+        font-size: px(30px);
+        color: #323232;
+        line-height: px(70px);
+    }
+    ul {
+        margin-top: px(14px);
+        li {
+            font-size: px(26px);
+            float: left;
+            margin-right: px(160px);
+            .icon-roundcheckfill {
+                color: #97011e;
+            }
+        }
+    }
+}
+
+.invoice_3 {
+    // height: px(88px);
+    // height: px(200px);
+    padding: 0 px(24px);
+    background: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+        font-size: px(28px);
+        color: #323232;
+    }
+    b {
+        width: px(28px);
+        height: px(28px);
+        background: url(../../../../static/assets/img/more@2x.png);
+        background-size: 100%;
+    }
+    i {
+        width: px(32px);
+        height: px(32px);
+        background: url(../../../../static/assets/img/alert@2x.png);
+        background-size: 100%;
+    }
+    input::-webkit-input-placeholder {
+        color: #969696;
+        font-size: px(28px);
+    }
+    .cell_input {
+        height: px(88px);
+        font-size: px(28px);
+        flex: auto;
+        border: none;
+        outline: none;
+        margin-left: px(22px);
+    }
+    .name {
+        margin-left: px(94px);
+    }
+    .addition {
+        margin-left: px(52px);
+    }
+}
+
+.tpid {
+    border-top: 1px solid #f4f4f4;
+}
+
+.invoice_4 {
+    height: px(220px);
+    background: #fff;
+    width: 100%;
+    margin-top: px(20px);
+    h3 {
+        padding: 0 px(24px);
+        font-size: px(30px);
+        color: #323232;
+        line-height: px(70px);
+        border-bottom: 1px solid #f4f4f4;
+        span {
+            margin-left: px(22px);
+            font-size: px(22px);
+            color: #323232;
+        }
+    }
+    ul {
+        padding: 0 px(24px);
+        margin-top: px(14px);
+        li {
+            width: px(180px);
+            line-height: px(60px);
+            border: 1px solid #f4f4f4;
+            text-align: center;
+            font-size: px(26px);
+            float: left;
+            margin-right: px(20px);
+        }
+        .active {
+            color: #97011e;
+            border: 1px solid #97011e;
+        }
+    }
+    p {
+        margin-top: px(26px);
+        padding: 0 px(24px);
+        font-size: px(22px);
+        color: #323232;
+    }
+}
+
+.btn {
+    position: fixed;
+    bottom: 0;
+    background: #ff8546;
+    width: 100%;
+    line-height: px(100px);
+    font-size: px(32px);
+    color: #fff;
+    text-align: center;
+}
+
+.mint-popup-4 {
+    width: 100%;
+    height: 54%;
+    overflow: auto;
+    .popup_close {
+        position: absolute;
+        top: px(24px);
+        right: px(24px);
+        font-size: px(36px);
+    }
+    h4 {
+        text-align: center;
+        line-height: px(88px);
+        font-size: px(32px);
+        border-bottom: 1px solid #dcdcdc;
+    }
+    ul {
+        li {
+            line-height: px(88px);
+            border-bottom: 1px solid #dcdcdc;
+            padding: 0 px(24px);
+            font-size: px(28px);
+            color: #323232;
+        }
+        .active {
+            color: #97011e;
+        }
+    }
+    .close_btn {
+        position: absolute;
+        bottom: 0;
+        background: #97011e;
+        color: #fff;
+        text-align: center;
+        line-height: px(100px);
+        width: 100%;
+        font-size: px(28px);
+    }
+    .close_btn_disabled {
+        background: #d8abb3;
+        ;
+    }
+}
+
+.defaultInvoice {
+    width: px(750px);
+    height: px(200px);
+    .invoiceInfos {
+        width: px(702px);
+        height: px(140px);
+        margin-top: px(30px);
+        // margin-left: px(24px);
+        background: #f4f4f4;
+        .titleContent {
+            // display: block;
+            width: 100%;
+            height: px(30px);
+            padding-left: px(20px);
+            padding-top: px(26px);
+            font-size: px(30px);
+            float: left;
+            color: #969696;
+        }
+        .taxpayerIdentificationCode {
+            // display: block;
+            width: 100%;
+            height: px(30px);
+            padding-left: px(20px);
+            padding-bottom: px(26px);
+            font-size: px(30px);
+            float: left;
+            color: #969696;
+        }
+        b {
+            position: absolute;
+            right: px(60px);
+            margin-top: px(-20px);
+        }
+    }
+}
+
+.default {
+    .chosen {
+        width: px(32px);
+        height: px(32px);
+        background: url(../../../../static/assets/img/cms/check.png);
+        background-size: 100%;
+    }
+    .notChosen {
+        width: px(32px);
+        height: px(32px);
+        background: url(../../../../static/assets/img/notChosen@2x.png);
+        background-size: 100%;
+    }
+}
+.defaultPhoto {
+  width: px(160px);
+  height: px(160px);
+  // position: absolute;
+  position: relative;
+  left: px(-516px);
+  i {
+    height: px(62px);
+    width: px(62px);
+    position: absolute;
+    margin-top: px(34px);
+    margin-left: px(26px);
+    background: url(../../../../static/assets/img/photo@2x.png) no-repeat;
+    background-size: 100%;
+  }
+  span {
+    position: absolute;
+    margin-top: px(100px);
+  }
+}

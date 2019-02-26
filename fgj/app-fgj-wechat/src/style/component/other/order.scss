@@ -1,0 +1,23 @@
+$baseWidth:750px;
+@function px($val) {
+    @return $val/$baseWidth*10+rem;
+}
+
+
+.nav{
+    padding:0 px(30px);
+    height:px(60px);
+    border-bottom:1px solid #ccc;
+    li{
+        float:left;
+        width:px(120px);
+        margin:0 px(6px);
+        font-size:px(30px);
+        text-align: center;
+        line-height: px(60px);
+    }
+    .active{
+        border-bottom:solid 2px #ff8546;
+        color:#ff8546;
+    }
+}

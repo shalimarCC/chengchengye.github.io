@@ -1,0 +1,203 @@
+$baseWidth:750px;
+@function px($val) {
+    @return $val/$baseWidth*10+rem;
+}
+.page-loadmore-listitem {
+
+    text-align: center;
+}
+
+.page-loadmore-listitem:first-child {
+    border-top: 1px solid #eee;
+}
+.page-loadmore-wrapper{
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+}
+
+.index{
+    background:#f4f4f4;
+    height:100%;
+
+    ul{
+        margin-top:px(208px);
+        background:#f4f4f4;
+        li{
+            background:#fff;
+            padding:px(20px);
+            border-bottom:1px solid #f4f4f4;
+            position:relative;
+
+            .active_label{
+                position:absolute;
+                top:px(20px);
+                left:0;
+
+                .label_btn{
+                    width:px(113px);
+                    height:px(44px);
+                    line-height:px(44px);
+
+                    border-radius:0 8px 8px 0;
+                    text-align: center;
+                    color:#fff;
+                    font-size:px(22px);
+                }
+                .label_btn1{
+                     background:#f5a623;
+                }
+                .label_btn2{
+                     background:#7ed321;
+                }
+                .label_btn3{
+                     background:#e24167;
+                }
+                .label_btn4{
+                     background:#9b9b9b;
+                }
+            }
+        }
+    }
+}
+.pe_main{
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+}
+.pe_left{
+
+    img{
+        width:px(355px);
+        height:px(200px);
+        display: block;
+    }
+
+}
+
+.pe_location{
+    display: -ms-flexbox;
+    display: flex;
+    justify-content:space-between;
+
+    .location{
+        display: block;
+        width:px(29px);
+        height:px(29px);
+        background:url("../../../../static/assets/img/activity/activity_location.png") no-repeat;
+        background-size:px(29px) px(29px);
+        margin-right:px(12px);
+    }
+    span{
+        white-space:nowrap;
+        overflow: hidden;
+        width:98%;
+        text-overflow: ellipsis;
+    }
+
+}
+.pe_time{
+    display: -ms-flexbox;
+    display: flex;
+    justify-content:flex-start;
+    .time{
+
+        width:px(29px);
+        height:px(29px);
+        background:url("../../../../static/assets/img/activity/activity_time.png") no-repeat center;
+        background-size:px(26px) px(26px);
+        margin-right:px(12px);
+    }
+    span{
+       white-space:nowrap;
+        overflow: hidden;
+        width:98%;
+        text-overflow: ellipsis;
+    }
+
+}
+
+
+.pe_right{
+    text-align: left;
+    padding-left:px(16px);
+    display: -ms-flexbox;
+    display: flex;
+    align-content:space-between;
+    flex-wrap:wrap;
+    width:48%;
+    h4{
+        font-size:px(32px);
+        color:#323232;
+        line-height: px(40px);
+        overflow : hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+
+    }
+    h6{
+        font-size:px(24px);
+        color:#787878;
+        line-height: px(34px);
+    }
+    .pe_title{
+        width:100%;
+
+        span{
+            line-height:px(34px);
+        }
+    }
+    .pe_btm{
+        width:100%;
+    }
+    span{
+        font-size:px(24px);
+        color:#646464;
+        line-height: px(38px);
+    }
+}
+
+
+.tab{
+    top:px(100px);
+    height:px(88px);
+    width:100%;
+    background:#fff;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center ;
+    line-height: px(88px);
+    z-index: 500;
+    position: fixed;
+    b{
+        width:px(2px);
+        height:px(42px);
+        background:#9b9b9b;
+    }
+    .tab_btn{
+
+        flex-grow:1;
+        height:100%;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content:center;
+        span{
+            font-size:px(32px);
+            color:#b4b4b4;
+            height:100%;
+            display: block;
+            width:px(100px);
+            text-align: center;
+            box-sizing: border-box;
+        }
+    }
+    .active{
+        span{
+            color:#ff8546;
+            border-bottom:px(4px) solid #ff8546;
+        }
+    }
+}

@@ -1,0 +1,163 @@
+$baseWidth:750px;
+@function px($val) {
+    @return $val/$baseWidth*10+rem;
+}
+#add_site{
+    background:#f4f4f4;
+    height:100%;
+    margin-top:px(108px);
+}
+.cell{
+    background:#Fff;
+    line-height: px(88px);
+    padding:0 px(24px);
+    display: -ms-flexbox;
+    display: flex;
+    justify-content:space-between;
+    border-bottom:1px solid #f4f4f4;
+    span{
+        font-size:px(28px);
+        color:#323232;
+        min-width: 22%;
+    }
+    p{
+        display: -ms-flexbox;
+        display: flex;
+        font-size:px(28px);
+        color:#969696;
+        b{
+            display: inline;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        em{
+            font-style:normal;
+            margin-right:px(10px);
+        }
+        i{
+            margin-left:px(10px);
+            color:#d4d4d4;
+        }
+    }
+
+    input::-webkit-input-placeholder {
+        color: #969696;
+        font-size: px(28px);
+    }
+    .icon-roundcheckfill{
+        color:#ff8546;
+    }
+}
+
+.cell_input{
+   font-size: px(28px);
+    width:px(550px);
+    border:none;
+    outline:none;
+    text-align: right;
+}
+
+
+.sex{
+    span{
+        font-size:px(28px);
+        color:#323232;
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        align-items:center;
+        i{
+            width:px(48px);
+            height:px(48px);
+            margin-right:px(16px);
+        }
+    }
+    .man{
+        i{
+
+
+            background-image:url(../../../../static/assets/img/activity/man.png);
+            background-size:100%;
+        }
+    }
+    .woman{
+        i{
+            background-image:url(../../../../static/assets/img/activity/woman.png);
+            background-size:100%;
+        }
+    }
+    .man_check{
+        i{
+            background-image:url(../../../../static/assets/img/activity/man_check.png);
+            background-size:100%;
+        }
+    }
+    .woman_check{
+        i{
+            background-image:url(../../../../static/assets/img/activity/woman_check.png);
+            background-size:100%;
+        }
+    }
+}
+
+.mint-popup-4{
+    width:100%;
+    height:px(600px);
+    -webkit-overflow-scrolling:touch;
+    h4{
+        text-align: center;
+        line-height: px(100px);
+        font-size:px(32px);
+        color:#323232;
+        font-weight:100;
+    }
+    ul{
+        li{
+            line-height: px(100px);
+            display: flex;
+            justify-content:space-between;
+            border-bottom:1px solid #f4f4f4;
+            padding:0 px(24px);
+            border-bottom:1px solid #f4f4f4;
+            span{
+                font-size:px(28px);
+                color:#323232;
+            }
+            .icon-round{
+                color:#646464;
+            }
+            .icon-roundcheckfill{
+                color:#ff8546;
+            }
+        }
+    }
+
+}
+.close_btn{
+    position:absolute;
+    bottom:0;
+    background:#ff8546;
+    color:#fff;
+    text-align: center;
+    line-height:px(100px);
+    width:100%;
+    font-size:px(36px);
+}
+
+.site_btn{
+    position: fixed;
+    bottom:px(30px);
+    line-height:px(100px);
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    span{
+        margin:0 px(24px);
+        color:#fff;
+        background:#ff8546;
+        text-align: center;
+        font-size:px(36px);
+        border-radius:px(10px);
+        width: 100%;
+        display: block;
+    }
+}

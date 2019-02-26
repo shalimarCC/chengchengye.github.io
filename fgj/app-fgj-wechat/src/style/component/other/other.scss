@@ -1,0 +1,33 @@
+$baseWidth:750px;
+@function px($val) {
+    @return $val/$baseWidth*10+rem;
+}
+
+#other{
+    background:#f4f4f4;
+    height:100%;
+    li{
+        background:#Fff;
+        line-height:px(88px);
+        padding:0 px(24px);
+        align-items: center;
+        font-size:px(32px);
+        border-bottom:1px solid #f4f4f4;
+
+        a{
+            display: -ms-flexbox;
+            display: flex;
+            justify-content:space-between;
+        }
+        p{
+
+            display: inline-block;
+            color:#323232;
+            i{
+              color:#969696;
+              font-size:px(36px);
+            }
+        }
+
+    }
+}

@@ -1,0 +1,138 @@
+$baseWidth:750px;
+@function px($val) {
+    @return $val/$baseWidth*10+rem;
+}
+#add_site{
+    background:#f4f4f4;
+    height:100%;
+    position: relative;
+}
+.cell{
+    background:#Fff;
+    line-height: px(88px);
+    padding:0 px(24px);
+    display: -ms-flexbox;
+    display: flex;
+    justify-content:space-between;
+    border-bottom:1px solid #f4f4f4;
+    span{
+        font-size:px(28px);
+        color:#323232;
+        min-width: 22%;
+    }
+    b{
+        font-size:px(28px);
+        color:#323232;
+        p{
+            display: inline;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        em{
+            font-style:normal;
+            margin-right:px(10px);
+        }
+        i{
+            margin-left:px(10px);
+            color:#d4d4d4;;
+        }
+    }
+
+    input::-webkit-input-placeholder {
+        color: #969696;
+        font-size: px(28px);
+    }
+    .icon-roundcheckfill{
+        color:#ff8546;
+    }
+}
+
+.cell_input{
+   font-size: px(28px);
+    width:px(550px);
+    border:none;
+    outline:none;
+}
+.address{
+    background:#Fff;
+    height:px(140px);
+    padding:px(10px) px(24px);
+    margin-bottom:px(20px);
+    textarea{
+        resize:none;
+        padding:0px;
+        width:100%;
+        height:100%;
+        border:none;
+        outline: none;
+        font-size:px(28px);
+        line-height: px(40px);
+    }
+}
+
+.mint-popup-site{
+    width:100%;
+    height:px(1040px);
+}
+
+#propertyTable{
+    .site_prop_btn{
+        height:px(100px);
+        border-bottom:1px solid #f4f4f4;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content:space-between;
+        padding:0 px(20px);
+        li{
+            font-size:px(28px);
+            line-height:px(100px);
+            float:left;
+            margin-right:px(15px);
+            padding:0 px(10px);
+            color:#787878;
+            max-width:px(170px);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .active{
+            color:#323232;
+            border-bottom:2px solid #ff8546;
+        }
+        .site_ok{
+            color:#323232;
+        }
+    }
+    .page-tab-container{
+        height:px(940px);
+        overflow: scroll;
+        p{
+            line-height:px(100px);
+            padding:0 px(24px);
+            color:#323232;
+            font-size:px(28px);
+        }
+        .checkSite{
+            color:#ff8546;
+        }
+    }
+    .site_popup_btn{
+        line-height:px(100px);
+        font-size:px(28px);
+        color:#787878;
+    }
+    .site_popup_btn_click{
+        color:#323232;
+    }
+}
+
+.site_btn{
+    width:100%;
+    position: absolute;
+    bottom:0;
+    line-height:px(100px);
+    background:#ff8546;
+    text-align: center;
+    color:#fff;
+    font-size:px(32px);
+}

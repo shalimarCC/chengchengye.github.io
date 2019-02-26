@@ -1,0 +1,43 @@
+$baseWidth:750px;
+@function px($val) {
+    @return $val/$baseWidth*10+rem;
+}
+
+.mint-toast-text{
+    font-size:px(30px);
+    font-family: sans-serif;
+}
+
+.v-modal{
+    overflow: hidden;
+    z-index: 2000;
+}
+
+
+.mint-toast.is-placemiddle{
+    z-index:3000;
+}
+
+.mint-popup-4{
+    overflow: hidden;
+}
+//自营标示
+.operateByown{
+  border: 1px solid #ff8546;
+  background: #ff8546;
+  color: #fff;
+  border-radius: 20px;
+  font-size: px(22px);
+  padding: px(2px) px(12px) 0;
+  margin-right: px(10px);
+  letter-spacing: 1px;
+}
+//仅现金购买
+.saleBycash{
+  color: #e24167;
+  border: 1px solid #e24167;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: px(22px);
+  letter-spacing: px(1px);
+}

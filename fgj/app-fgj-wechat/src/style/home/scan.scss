@@ -1,0 +1,64 @@
+$baseWidth:750px;
+@function px($val) {
+    @return $val/$baseWidth*10+rem;
+}
+
+.head {
+    padding: 0 px(24px);
+    border-bottom: 0.5px solid #DCDCDC;
+    height: px(88px);
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 999;
+    background: #fff;
+    span {
+        font-size: px(36px);
+    }
+}
+
+.title {
+    font-size: px(36px);
+    font-weight: 900;
+}
+
+ul {
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    /* Safari */
+    justify-content: space-between;
+    li {
+        display: flex;
+        display: -webkit-flex;
+        /* Safari */
+        align-items: center;
+    }
+    li:nth-child(1) {
+        width: px(37.5px);
+    }
+    li:nth-child(2) {
+        flex-grow: 2;
+        justify-content: center;
+        line-height: 45px;
+    }
+}
+
+.qucode {
+    // background-image: url(../../../../static/assets/img/login/MUU-LOGO@2x.png);
+    // background-size: 100%;
+    // background-repeat: no-repeat;
+    // background-color: #fff;
+    width: px(448px);
+    height: px(448px);
+    top: px(230px);
+    left: px(150px);
+    position: absolute;
+    border: 2px solid #fff;
+}
+
+.hint {
+    top: px(18px);
+    font-size: px(26px);
+    color: #fff;
+}

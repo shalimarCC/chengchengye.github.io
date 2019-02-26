@@ -1,0 +1,111 @@
+$baseWidth:750px;
+@function px($val) {
+    @return $val/$baseWidth*10+rem;
+}
+
+#order_list{
+    margin-top:px(5px);
+    background:#eee;
+    li{
+        background:#fff;
+        margin-bottom:px(30px);
+    }
+}
+
+.order_head{
+    padding:0 px(20px);
+    font-size:px(24px);
+    text-align: left;
+    line-height:px(80px);
+    border-bottom:1px solid #ccc;
+    p{
+        display: inline-block;
+        width:85%;
+    }
+    span{
+        color:#ff8546;
+        text-align: right;
+        display: inline-block;
+        width:15%;
+    }
+}
+
+.order_goods{
+    margin:0 px(20px);
+    border-bottom:1px solid #ccc;
+}
+.goods_left{
+        float:left;
+        height:100%;
+        width:30%;
+
+        img{
+            width:px(140px);
+            height:px(140px);
+            margin-top:px(30px);
+        }
+    }
+
+    .goods_right{
+        float:right;
+        width:70%;
+        text-align: left;
+        h4{
+            font-size:px(30px);
+            color:#333;
+            display: inline-block;
+            width:80%;
+        }
+        b{
+            text-align: right;
+            display: inline-block;
+            width:20%;
+            font-size: px(30px);
+        }
+        h6{
+            font-size:px(24px);
+            line-height: px(50px);
+        }
+        .goods_sold{
+            width:100%;
+            text-align: right;
+            font-size:px(20px);
+            span{
+                line-height:px(30px);
+            }
+        }
+        .goods_price{
+            width:100%;
+            font-size:px(20px);
+            margin-top:px(40px);
+            del{
+                color:#333;
+            }
+            p{
+
+            line-height: px(60px);
+                color:#333;
+                span{
+
+                    font-size:px(30px);
+                }
+            }
+        }
+    }
+
+    .allGoods{
+        padding:0 px(20px);
+        text-align: right;
+        border-bottom:1px solid #ccc;
+        line-height: px(60px);
+        span{
+
+            font-size:px(24px);
+        }
+
+    }
+    .orderBtn{
+        padding:0 px(20px);
+        height:px(100px);
+        text-align:right;
+    }

@@ -1,0 +1,165 @@
+$baseWidth:750px;
+@function px($val) {
+    @return $val/$baseWidth*10+rem;
+}
+
+#order_list{
+    background:#f4f4f4;
+    li{
+        background:#fff;
+        margin-top:px(20px);
+        margin-bottom:px(20px);
+    }
+}
+.order_head{
+    padding:0 px(20px);
+    font-size:px(24px);
+    text-align: left;
+    line-height:px(88px);
+    border-bottom:1px solid #f4f4f4;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content:space-between;
+    p{
+        display: inline-block;
+        width:85%;
+    }
+    span{
+        color:#ff8546;
+    }
+}
+
+.order_goods{
+    padding:px(20px) px(24px);
+    border-bottom:1px solid #f4f4f4;
+    height:px(200px);
+}
+.goods_left{
+        float:left;
+        height:100%;
+        img{
+            width:px(200px);
+            height:px(200px);
+        }
+    }
+
+    .goods_right{
+        float:right;
+        width:68%;
+        height:100%;
+        position: relative;
+        text-align: left;
+        .title{
+            display: -ms-flexbox;
+            display: flex;
+            justify-content:space-between;
+            line-height: px(50px);
+        }
+        h4{
+            font-size:px(28px);
+            color:#323232;
+            //white-space:nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        b{
+            text-align: right;
+            color:#646464;
+            font-size: px(24px);
+        }
+        h6{
+            font-size:px(24px);
+            color:#646464;
+            line-height: px(50px);
+        }
+        .goods_sold{
+            width:100%;
+            text-align: right;
+            font-size:px(20px);
+            span{
+                line-height:px(30px);
+            }
+        }
+        .goods_price{
+            width:100%;
+            font-size:px(20px);
+            position: absolute;
+            bottom:0;
+            del{
+                color:#333;
+            }
+            p{
+
+                line-height: px(40px);
+                color:#323232;
+                span{
+
+                    font-size:px(28px);
+                }
+            }
+        }
+    }
+
+    .allGoods{
+        padding:0 px(20px);
+        text-align: right;
+        border-bottom:1px solid #f4f4f4;
+        line-height: px(68px);
+        color:#323232;
+        b{
+            font-size:px(24px);
+        }
+        span{
+            font-size:px(30px);
+        }
+    }
+    .orderBtn{
+        padding:0 px(20px);
+        height:px(100px);
+        text-align:right;
+        .parm_btn{
+            border: 1px solid #f4f4f4;
+        }
+        .checkCoupon{
+            color: #ff8456;
+            border: 1px solid #ff8456;
+        }
+        .danger_btn{
+            border: 1px solid #ff8546;
+            color:#ff8546;
+        }
+    }
+    .mint-popup-4{
+        width:100%;
+        height:px(710px);
+        overflow: hidden;
+        h4{
+            text-align: center;
+            line-height: px(88px);
+            font-size:px(32px);
+        }
+        ul{
+            li{
+                line-height: px(100px);
+                display: flex;
+                justify-content:space-between;
+                border-bottom:1px solid #f4f4f4;
+                padding:0 px(24px);
+                border-bottom:1px solid #f4f4f4;
+                span{
+                    font-size:px(28px);
+                    color:#323232;
+                }
+                .icon-round{
+                    color:#646464;
+                }
+                .icon-roundcheckfill{
+                    color:#ff8546;
+                }
+            }
+        }
+
+    }

@@ -1,0 +1,109 @@
+$baseWidth:750px;
+@function px($val) {
+    @return $val/$baseWidth*10+rem;
+}
+
+
+#site{
+    background:#f4f4f4;
+    height:100%;
+    ul{
+        padding-bottom:px(100px);
+    }
+    li{
+        background:#fff;
+        margin-bottom:px(20px);
+        .site_title{
+             border-bottom:1px solid #f4f4f4;
+             padding:px(30px) px(26px);
+             p:nth-child(1){
+                font-size:px(32px);
+                line-height: px(60px);
+                color:#000;
+                display: -ms-flexbox;
+                display: flex;
+                justify-content:space-between;
+                span{
+                    display: inline-block;
+                    font-size:px(28px);
+                    color:#323232;
+                }
+            }
+            p:nth-child(2){
+                font-size:px(24px);
+                line-height: px(60px);
+            }
+        }
+
+        .site_btn{
+            padding:0 px(26px);
+            display: -ms-flexbox;
+            display: flex;
+            justify-content:space-between;
+            div{
+                line-height: px(88px);
+                font-size:px(28px);
+            }
+            p{
+                display: inline-block;
+                color:#323232;
+                margin-left:px(30px);
+            }
+            a{
+                color:#323232;
+            }
+            .active{
+                color:#ff8546;
+            }
+        }
+
+    }
+}
+
+.page-loadmore-listitem {
+
+    text-align: center;
+}
+
+.page-loadmore-listitem:first-child {
+    border-top: 1px solid #eee;
+}
+
+.page-loadmore-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+}
+
+.add_btn{
+    width:100%;
+    position: fixed;
+    bottom:0;
+    line-height:px(100px);
+    background:#ff8546;
+    text-align: center;
+    color:#fff;
+    font-size:px(32px);
+    a{
+        color:#fff;
+        display: inline-block;
+        width:100%;
+        height:100%;
+    }
+}
+
+
+.site_error{
+    background:#f4f4f4;
+    text-align: center;
+    height:100%;
+    img{
+        width:px(310px);
+        height:px(240px);
+        margin-top:px(300px);
+    }
+    p{
+        font-size:px(28px);
+        color:#787878;
+        margin-top:px(32px);
+    }
+}

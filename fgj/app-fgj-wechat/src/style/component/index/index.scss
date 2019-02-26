@@ -1,0 +1,47 @@
+    $baseWidth:750px;
+    @function px($val) {
+        @return $val/$baseWidth*10+rem;
+    }
+
+    .index{
+        background:#fff;
+        height:100%;
+    }
+
+    .page-loadmore .mint-spinner {
+        display: inline-block;
+        vertical-align: middle
+    }
+
+    .page-loadmore-desc {
+        text-align: center;
+        color: #666;
+        padding-bottom: 5px
+    }
+
+
+    .mint-loadmore-bottom span {
+        display: inline-block;
+        -webkit-transition: .2s linear;
+        transition: .2s linear;
+        vertical-align: middle
+    }
+
+    .mint-loadmore-bottom span.is-rotate {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+
+    .banner_footer{
+        img{
+            width:100%;
+            height:px(60px);
+        }
+        padding-bottom:px(20px);
+        background:#F4F4F4;
+    }
+
+
+
+
+

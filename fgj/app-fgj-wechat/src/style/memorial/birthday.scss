@@ -1,0 +1,47 @@
+$baseWidth:750px;
+@function px($val) {
+    @return $val/$baseWidth*10+rem;
+}
+.index{
+    height:100%;
+    background:#f4f4f4;
+
+}
+
+ul{
+    margin-bottom:px(120px);
+    li{
+        padding:px(12px) px(24px);
+        background:#fff;
+        margin-bottom:px(20px);
+        color:#323232;
+        font-size:px(30px);
+        height:px(122px);
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .check{
+        background:#ffac2c;
+        color:#fff;
+    }
+}
+
+.btn{
+    position:fixed;
+    bottom:0;
+    background:#ffac2c;
+    width:100%;
+    line-height:px(100px);
+    font-size:px(32px);
+    color:#fff;
+    text-align: center;
+
+}
+
+.disabled{
+    background:#c8c8c8;
+}
+

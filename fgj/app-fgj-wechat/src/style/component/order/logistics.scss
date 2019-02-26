@@ -1,0 +1,256 @@
+$baseWidth:750px;
+@function px($val) {
+    @return $val/$baseWidth*10+rem;
+}
+
+#logistics{
+    background:#f4f4f4;
+}
+.cell{
+    background:#Fff;
+    line-height: px(88px);
+    padding:0 px(24px);
+    display: -ms-flexbox;
+    display: flex;
+    justify-content:space-between;
+    span{
+        font-size:px(28px);
+        color:#323232;
+    }
+    b{
+        font-size:px(24px);
+        color:#969696;
+        i{
+            margin-left:px(10px);
+            color:#969696;;
+        }
+    }
+
+    input::-webkit-input-placeholder {
+        color: #969696;
+        font-size: px(28px);
+    }
+}
+
+.mint-popup-4{
+    width:100%;
+    height:px(460px);
+}
+
+#logisticsTable{
+    padding:0 px(24px);
+    height:px(410px);
+    padding-top:px(50px);
+    overflow: auto;
+    table{
+        width:100%;
+        margin-bottom:px(98px);
+    }
+    tr{
+        td{
+            text-align: center;
+            width:100%;
+            font-size:px(30px);
+            line-height:px(90px);
+            color:#646464;
+        }
+        text-align: center;
+        width:100%;
+        border-bottom:1px solid #dcdcdc;
+    }
+    .logistics_check{
+        color:#ff8546;
+    }
+}
+.property_pop{
+        position:absolute;
+        bottom:0;
+        width:100%;
+        line-height:px(100px);
+        background:#ff8546;
+        text-align:center;
+        color:#fff;
+        font-size:px(32px);
+    }
+
+    .close_rate{
+        position: absolute;
+        top:0;
+        right:px(30px);
+        i{
+            color:#000;
+            font-size:px(40px);
+        }
+    }
+
+
+.logisticsType{
+
+    background:#Fff;
+    margin-top:px(20px);
+    height:px(160px);
+    padding:0 px(24px);
+    border-bottom:1px solid #d4d4d4;
+
+    h5{
+        font-size:px(30px);
+        line-height: px(60px);
+        color:#323232;
+        span{
+            color:#ff8546;
+        }
+    }
+
+    p{
+        font-size:px(24px);
+        color:#646464;
+        line-height: px(44px);
+    }
+}
+.logisticsType1{
+
+    background:#Fff;
+    margin-top:px(20px);
+    line-height: px(88px);
+    padding:0 px(24px);
+    border-bottom:1px solid #d4d4d4;
+
+    h5{
+        font-size:px(30px);
+        line-height: px(88px);
+        color:#323232;
+        span{
+            color:#24AD5D;
+        }
+    }
+
+    p{
+        font-size:px(24px);
+        color:#646464;
+        line-height: px(44px);
+    }
+}
+.order_goods{
+    padding:px(20px) px(24px);
+    height:px(200px);
+    background:#Fff;
+}
+.goods_left{
+        float:left;
+        height:100%;
+        img{
+            width:px(200px);
+            height:px(200px);
+        }
+    }
+
+    .goods_right{
+        float:right;
+        width:68%;
+        height:100%;
+        position: relative;
+        text-align: left;
+        .title{
+            display: -ms-flexbox;
+            display: flex;
+            justify-content:space-between;
+            line-height: px(50px);
+        }
+        h4{
+            font-size:px(28px);
+            color:#323232;
+            white-space:nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        b{
+            text-align: right;
+            color:#646464;
+            font-size: px(24px);
+        }
+        h6{
+            font-size:px(24px);
+            color:#646464;
+            line-height: px(50px);
+        }
+        .goods_sold{
+            width:100%;
+            text-align: right;
+            font-size:px(20px);
+            span{
+                line-height:px(30px);
+            }
+        }
+        .goods_price{
+            width:100%;
+            font-size:px(20px);
+            position: absolute;
+            bottom:0;
+
+            del{
+                color:#333;
+            }
+            p{
+
+                line-height: px(40px);
+                color:#323232;
+                span{
+
+                    font-size:px(28px);
+                }
+            }
+        }
+    }
+
+
+    .logistics_message{
+        margin-top:px(20px);
+        background:#fff;
+        padding-left:px(56px);
+        ul{
+            border-left:1px solid #c8c8c8;
+            li{
+                padding:px(35px) 0;
+                margin: 0 px(40px);
+                border-bottom:1px solid #d4d4d4;
+                position: relative;
+                p{
+                    line-height:px(48px);
+                    font-size:px(28px);
+                    color:#969696;
+                }
+                i{
+                    display: inline-block;
+                    position: absolute;
+                    width:px(18px);
+                    height:px(18px);
+                    border-radius: 10px;
+                    background:#c8c8c8;
+                    left:px(-50px);
+                    top:px(50px);
+                }
+
+            }
+            li:nth-child(1){
+                i{
+                    display: inline-block;
+                    position: absolute;
+                    width:px(26px);
+                    height:px(26px);
+                    border-radius: 10px;
+                    border: 2px solid #ff8546;
+                    -moz-box-shadow:0px 0px 10px #ff8546;
+                    -webkit-box-shadow:0px 0px 10px #ff8546;
+                    box-shadow:0px 0px 10px #ff8546;
+                    background:#ff8546;
+                    left:px(-56px);
+                    top:px(45px);
+                }
+                p{
+                    line-height:px(48px);
+                    font-size:px(28px);
+                    color:#323232;
+                }
+            }
+        }
+    }
